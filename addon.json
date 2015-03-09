@@ -1,0 +1,10 @@
+{
+  "title":"Th13teen's Weapon Glow",
+  "type":"effects",
+  "tags":[ "realism" ],
+  "ignore":
+  [
+    ".git",
+    "*.md"
+  ]
+}
