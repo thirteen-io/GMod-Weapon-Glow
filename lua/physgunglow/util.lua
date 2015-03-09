@@ -36,7 +36,7 @@ PhysgunGlow.ShouldGlow = function( ply )
 	if ( PhysgunGlow.Weapons[ weapon ] == nil ) then return false end
 
 	--Addon support
-	if ( !hook.Call( "ShouldEmitWeaponGlow", GAMEMODE, ply ) ) then return false end
+	if ( hook.Call( "ShouldEmitWeaponGlow", GAMEMODE, ply ) == false ) then return false end
 
 	--Core GMod
 	if ( !ply:GetActiveWeapon():IsValid() ) then return false end
