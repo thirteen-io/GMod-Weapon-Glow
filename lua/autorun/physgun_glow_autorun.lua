@@ -7,7 +7,8 @@ PhysgunGlow.Print = function( msg )
 end
 
 if SERVER then
-	resource.AddWorkshop( "111249028" )
+	AddCSLuaFile( "physgunglow/util.lua" )
+	AddCSLuaFile( "physgunglow/glow.lua" )
 else
 	PhysgunGlow.Print( "Loading Physgun Glow" )
 	include( "physgunglow/glow.lua" )
