@@ -26,7 +26,7 @@ PhysgunGlow.ShouldGlow = function( ply )
 
 	--CVar (Max Dist)
 	if ( !enable:GetBool() ) then return false end
-	if ( ply:GetPos():Distance( view.origin or ply:GetPos() ) > maxdist:GetInt() ) then return false end
+	if ( ply:GetPos():Distance( (view and view.origin) or ply:GetPos() ) > maxdist:GetInt() ) then return false end
 
 	--Weapon specific
 	local weapon_e = ply:GetActiveWeapon()
